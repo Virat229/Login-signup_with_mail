@@ -3,7 +3,8 @@ from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail
 import random
 
-SENDGRID_API_KEY = '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'
+SENDGRID_API_KEY = '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'
+
 
 
 def send(val, recipient_email_tuple):
