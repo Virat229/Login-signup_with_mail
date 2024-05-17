@@ -11,7 +11,6 @@ conn = psycopg2.connect(url)
 
 
 app = Flask(__name__)
-app.secret_key = 'you_are_great'
 
 def create_tables():
     conn = psycopg2.connect(url)
