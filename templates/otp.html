@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OTP</title>
+    <style>
+        * {
+            background: black;
+            font: 60px solid rgb(243, 3, 115);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="/OTP" method="POST">
+        <label>OTP: <input type="text" name="OTP"></label>
+        <input type = "hidden" id = "remaining_time" name = "remaining_time" value="60">
+        <button type="submit" style="font-size: 20px; color: rgb(14, 243, 98)">Verify</button>
+    </form>
+    {% if message %}
+        <p style="color: red">{{ message }}</p>
+    {% endif %}
+    <div class="timer-container">
+        <h1 id="timer">01:00</h1>
+    </div>
+    <form action="/resend_otp" method="POST" id="resend-form">
+        <button type="submit" id = "resend-btn"style="font-size: 20px; color: rgb(14, 243, 9)">Resend OTP</button>
+    </form>
+    <script src="static/timer.js"></script>
+</body>
+</html>

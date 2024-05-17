@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel = "stylesheet" href= "static/login_style.css">
+    </head>
+ 
+        
+    <body style = "font: 60px solid rgb(243, 3, 115);">
+        <script src = "static/login.js"></script>
+        <pre>
+        <div id = "login_1" >
+            <form action="/login" method="POST">
+        <label style="font-size:30px;color:rgb(14, 243, 98)" name = "username" required>Username:<input type= "text" style="color:white" name = "username" id ="user" ></label>
+      
+        <label style="font-size:30px;color:rgb(14, 243, 98)" name = "password" required>Password:<input type = "password" style="color:white" id = "pswd" name = "password"></label>
+        
+        <label style = "font-size:20px;color:rgb(14, 243, 98)">Show Password<input type="checkbox" style="color:white" onclick=myFunction()></label>
+     
+                        <button id = "login_btn1"style="font-size:20px;color:rgb(14, 243, 98)" type = "submit">login</button>
+                    </form>
+                    <form action = "/signup" method = "POST">
+                        <button style = "font-size:20px;color:rgb(14, 243, 9)" type = "submit">Signup</button>
+                    </form>
+                        <form action = "/forgot" method = "POST">
+                        <button style = "font-size:20px;color:rgb(14, 243, 9)" id = "login_btn3" type = "submit">Forgot Password</button>
+                    </form>
+
+    </div>
+</pre>
+    </body>
+  
+</html>

@@ -1,0 +1,17 @@
+
+* {
+    background: black;
+    font: 60px solid rgb(243, 3, 115);
+}
+#login_1 {
+    padding-left:60em;
+    padding-top:20em;
+    
+}
+body{
+    font: 60px solid rgb(243, 3, 115);
+}
+#show_pswd{
+    font:solid red;
+}
+

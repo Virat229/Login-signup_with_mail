@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Sign In</title>
+        <link rel = "stylesheet" href= "static/login_style.css">
+    </head>
+ 
+        
+    <body style = "font: 60px solid rgb(243, 3, 115);">
+        <script src = "static/login.js"></script>
+        <pre>
+        <div id = "login_1" >
+             <form action="/signin" method="POST" onsubmit="return validatepass()">
+        <label style="font-size:30px;color:rgb(14, 243, 98)" name = "username" required>Username:<input type= "text" style="color:white" name = "username" id ="user" ></label>
+        <label style="font-size:30px;color:rgb(14, 243, 98)" name = "password" required>Password:<input type = "password" style="color:white" id = "pswd" name = "password"></label>
+        <label style="font-size:30px;color:rgb(14, 243, 98)" name = "Email" required>Email:<input type = "Email" style="color:white" id = "Email" name = "Email"></label>
+        <label style="font-size:30px;color:rgb(14, 243, 98)" name = "Phone" required>Phone no.:<input type = "Phone" style="color:white" id = "Phone" name = "Phone"></label>
+        
+        <label style = "font-size:20px;color:rgb(14, 243, 98)">Show Password<input type="checkbox" style="color:white" onclick=myFunction()></label>
+                        <button id = "login_btn1"style="font-size:20px;color:rgb(14, 243, 98)" type = "submit">signup</button>
+            </form>
+            <p style = "color:red">Please use a strong password
+                <ol style = "color:green"><li>Its length should be more then 12 characters</li>
+                <li>It should contain atleast 1 speacial character ie.'@','#','%','&','$' </li></ol>
+            </p>
+            {% if message %}
+<p style="color: red">{{ message }}</p>
+{% endif %}
+    </div> 
+    
+</pre>
+
+    </body>
+  
+</html>
